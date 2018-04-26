@@ -9,8 +9,6 @@ before_install:
 - docker pull lambci/lambda:nodejs6.10
 - docker pull lambci/lambda:nodejs8.10
 - docker pull lambci/lambda:python2.7
-install:
-- yarn
 script:
 - yarn run lint
 - yarn run test --coverage
